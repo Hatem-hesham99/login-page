@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to page</title>
+    <!-- css files -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/all.css">
+     <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <section id="sec">
+        <header class="">
+            <div class="p-3 text-white">
+                <h1 class=" text-center "><i class="fa-solid fa-laptop me-3 "></i>Smart Login System</h1>
+            </div>
+        </header>
+        <section class="register">
+            <div class="container min-vh-100 ">
+                <form  class="w-75 mx-auto p-5 text-white">
+                    <h3 class="text-cente">Enter your login  credentials</h3>
+                    <div class="mb-5 ">
+                          <input id="userEmail" class=" form-control " type="text" placeholder="Enter Your Email">
+                          <p id="errorMsgEmail" class=" alert alert-danger d-none">start captail char or small or number or - _ and must end @ (gmail|yahoo|outlook|msn) .com like This=> Hatem@gmail.com </p> 
+                        </div>
+                    <div class="mb-5 position-relative ">
+                        <input id="userPass" class=" form-control " type="password" placeholder="Enter Your Password"> <i id="icon" class="fa-solid fa-unlock  "></i>
+                        <p id="errorMsgPass" class="  alert alert-danger d-none">start captail char from[A-Z] and small char or number or @#$%&*-_ at lest 2 to 10 after char capital like This=> Htem99@ </p>
+                        <i id="icon2" class="fa-solid fa-lock d-none "></i>
+                    </div>
+                    <div>
+                        <button id="btnLogin" type="button" class="btn btn-warning form-control">Login</button>
+                        <p id="successMsg" class="bg-success alert p-2 text-center my-2 h5 d-none">success will go to home page after 2s</p>
+                        <p id="erroMsg" class="text-center my-2 p-2  bg-danger alert-danger d-none">email or password is invalid  </p>
+                    </div>
+                   <div class="d-flex justify-content-center my-4">
+                    <p class="my-3 text-center text-white bg-dark rounded-2 px-3">You have an account?==></p> <button class="btn btn-success ms-2 p-0 py-0"><a class="text-white" href="index.html">SignUp</a></button>
+                   </div>
+                </form>
+               
+            </div>
+        </section>
+    </section>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

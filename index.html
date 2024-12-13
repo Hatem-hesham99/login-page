@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUP for page</title>
+    <!-- css files -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/all.css">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="sec">
+        <header>
+            <div class="p-3 text-dark-emphasis">
+                <h1 class=" text-center "><i class="fa-solid fa-laptop me-3 "></i>Smart Login System</h1>
+            </div>
+        </header>
+        <section class="register">
+            <div class="container min-vh-100 ">
+                <form onsubmit="return false;" class="w-75 mx-auto p-5 text-white">
+                    <h3 class="text-cente text-dark">Enter your registration credentials</h3>
+                    <div class="mb-5 item">
+                        <input id="userName" class=" bg-black text-white form-control " type="text" placeholder="Enter Your Name...">
+                        <p id="errorMsgName" class="alert alert-danger d-none">start captail char from[A-Z] and small char at lest 2 char after char capital like This=> Hatem </p>
+                    </div>
+                    <div class="mb-5 item">
+                        <input id="userEmail" class=" bg-black text-white form-control " type="text" placeholder="Enter Your Email...">
+                        <p id="errorMsgEmail" class=" alert alert-danger d-none">start captail char or small or number or - _ and must end @ (gmail|yahoo|outlook|msn) .com like This=> Hatem@gmail.com </p>
+                    </div>
+                    <div class="mb-5 item position-relative">
+                        <input id="userPass" class="bg-black text-white form-control " type="password" placeholder="Enter Your Password...">
+                        <i id="icon" class="fa-solid fa-unlock  "></i>
+                        <i id="icon2" class="fa-solid fa-lock d-none "></i>
+                        <p id="errorMsgPass" class="  alert alert-danger d-none">start captail char from[A-Z] and small char or number or @#$%&*-_ at lest 2 to 10 after char capital like This=> Htem99@ </p>
+                    </div>
+                    <div>
+                        <button id="btnSign" type="submit" class="btn btn-info form-control">register now</button>
+                        <p id="successMsg" class="bg-success alert p-2 text-center my-2 h5 d-none">become have account success</p>
+                        <p id="erroMsg" class="text-center my-2 p-2 d-none bg-danger alert-danger">already you have an acount  </p>
+                    </div>
+                    <p class="my-3 text-center">You have an account?<button class="btn btn-success"><a class="text-white"href="login.html">Sign In</a></button> </p>
+                </form>
+               
+            </div>
+        </section>
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

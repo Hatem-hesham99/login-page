@@ -1,0 +1,30 @@
+body{
+    font-family: monospace;
+    
+}
+a{
+    text-decoration:none ;
+}
+#sec{
+    background-image: url(../images/e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b.jfif);
+    background-size: cover;
+    background-position: center;
+}
+#icon{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    color: black;
+}
+#icon2{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    color: red;
+}
+::selection{
+    background-color: rgb(225, 16, 16);
+    color: black;
+}
